@@ -1,5 +1,7 @@
+OK_FORMAT = True
+
 test = {
-  'name': 'Question 2',
+  'name': 'Question 4',
   'points': 1,
   'suites': [
     {
@@ -7,11 +9,11 @@ test = {
         {
           'code': r"""
           >>> # Check minimum and maximum blood oxygen level  
-          >>> minBloodO2 == 90.79120814564097
+          >>> bool(minBloodO2 == 90.79120814564097)
           True
-          >>> maxBloodO2 == 100.0
+          >>> bool(maxBloodO2 == 100.0)
           True
-          >>> meanBloodO2 == 97.84158102099076
+          >>> bool(meanBloodO2 == 97.84158102099076)
           True
           """,
           'hidden': False,
